@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News app</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav flex container">
+            <a href="#">
+                <h1 class="company-logo">News International</h1>
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-links nav-item" id="ipl" onclick="navItemClick(`ipl`)">IPL</li>
+                    <li class="hover-links nav-item" id="scams" onclick="navItemClick(`scams`)">Scams</li>
+                    <li class="hover-links nav-item" id="politics" onclick="navItemClick(`politics`)">Politics</li>
+                </ul>
+            </div>
+            <form action="" class="search flex">
+                <input spellcheck="false" type="text" class="news-input" placeholder="Topic">
+                <button type="submit" class="news-btn">Search</button>
+            </form>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex">
+
+        </div>
+    </main>
+    <template id="news-template">
+        <div class="card">
+            <div class="card-header">
+                <img src="https:\\via.placeholder.com/400x200" alt="img" id="card-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is the title</h3>
+                <h6 class="news-source" id="news-source">koimoi</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                    dolores maxime et nobis! Perferendis neque consequatur id dolor adipisci obcaecati vero harum enim
+                    totam ipsum incidunt quia, libero expedita dolores quidem in illo hic saepe. Adipisci assumenda
+                    voluptas quisquam. Nostrum exercitationem porro, ab earum et deleniti accusamus alias perferendis
+                    nemo eius est in libero nihil autem incidunt inventore animi perspiciatis!</p>
+            </div>
+        </div>
+    </template>
+    <script src="./app.js" type="module"></script>
+    <script src="./api.js" type="module"></script>
+</body>
+
+</html>
